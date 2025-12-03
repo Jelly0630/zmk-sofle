@@ -10,6 +10,8 @@ manifest:
   #    url-base: https://github.com/GPeye
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: gpeye                         
+      url-base: https://github.com/GPeye  
   projects:
    # - name: mario-peripheral-animation
    #   remote: gpeye
@@ -24,5 +26,8 @@ manifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
+    - name: hammerbeam-slideshow          
+      remote: gpeye                       
+      revision: main                      
   self:
     path: boards
