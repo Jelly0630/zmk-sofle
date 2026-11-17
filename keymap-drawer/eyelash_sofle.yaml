@@ -11,7 +11,7 @@ layers:
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
-  - {t: '=', h: '9', s: +}
+  - {t: '9', s: (}
   - {t: '-', h: '0', s: _}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
