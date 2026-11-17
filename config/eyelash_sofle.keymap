@@ -54,11 +54,11 @@
 
         Base {
             bindings = <
-&mt LG(C) LG(V)          &kp N1      &kp N2        &kp N3        &kp N4     &kp N5    &kp C_VOLUME_UP       &kp N6  &kp N7     &kp N8         &kp N9   &kp N0     &kp BACKSPACE
+&mt (LG(C)) LG(V)        &kp N1      &kp N2        &kp N3        &kp N4     &kp N5    &kp C_VOLUME_UP       &kp N6  &kp N7     &kp N8         &kp N9   &kp N0     &kp BACKSPACE
 &kp TAB                  &kp Q       &kp W         &kp E         &kp R      &kp T     &kp C_VOLUME_DOWN     &kp Y   &kp U      &kp I          &kp O    &kp P      &kp MINUS
 &mt LEFT_CONTROL ESCAPE  &kp A       &kp S         &kp D         &kp F      &kp G     &kp C_BRIGHTNESS_DEC  &kp H   &kp J      &kp K          &kp L    &kp SEMI   &kp APOS
 &mt LSHFT GRAVE          &kp Z       &kp X         &kp C         &kp V      &kp B     &kp C_BRIGHTNESS_INC  &kp N   &kp M      &kp COMMA      &kp DOT  &kp FSLH   &kp BACKSLASH
-&kp C_MUTE               &kp DELETE  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &to 1     &kp C_MUTE            &to 2   &kp SPACE  &kp RIGHT_GUI  &mo 3    &kp ENTER
+&kp C_MUTE               &kp DELETE  &kp LEFT_ALT  &kp LEFT_GUI  &kp GRAVE  &to 1     &kp C_MUTE            &to 2   &kp SPACE  &kp RIGHT_GUI  &mo 3    &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -67,11 +67,11 @@
 
         Nav {
             bindings = <
-&trans  &trans  &trans  &kp LC(UP_ARROW)  &kp LS(LG(NUMBER_4))  &kp BACKSPACE    &trans  &trans         &trans          &trans          &trans           &trans            &trans
-&trans  &trans  &trans  &trans            &trans                &kp DELETE       &trans  &kp PAGE_UP    &kp END         &kp UP_ARROW    &kp HOME         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans  &trans            &trans                &trans           &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans            &trans
-&trans  &trans  &trans  &trans            &trans                &kp RET          &trans  &trans         &trans          &trans          &trans           &trans            &trans
-&trans  &trans  &trans  &trans            &trans                &to 0            &trans  &to 2          &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &kp LC(UP_ARROW)  &kp LS(LG(NUMBER_4))  &kp BACKSPACE     &trans  &trans           &trans             &trans            &trans           &trans            &trans
+&trans  &trans  &trans  &trans            &trans                &kp DELETE        &trans  &kp PAGE_UP      &kp END            &kp UP_ARROW      &kp HOME         &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans  &trans  &trans            &trans                &trans            &trans  &kp PAGE_DOWN    &kp LEFT_ARROW     &kp DOWN_ARROW    &kp RIGHT_ARROW  &trans            &trans
+&trans  &trans  &trans  &kp LESS_THAN     &kp LEFT_BRACKET      &kp LEFT_BRACE    &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans           &trans            &trans
+&trans  &trans  &trans  &trans            &kp ENTER             &to 0             &trans  &to 2            &trans             &trans            &trans           &trans
             >;
 
             display-name = "Navigation";
@@ -80,11 +80,11 @@
 
         Number {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp KP_NUM       &kp KP_EQUAL     &kp KP_DIVIDE    &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &trans
-&trans  &trans  &trans  &trans  &trans  &to 1     &trans  &to 0   &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &kp KP_NUM       &kp KP_EQUAL     &kp KP_DIVIDE    &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp NUMBER_3      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(NUMBER_2)  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LS(NUMBER_1)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &trans
+&trans  &trans  &trans  &trans  &trans  &to 1     &trans  &to 0             &trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans
             >;
 
             display-name = "Number";
@@ -100,7 +100,7 @@
 &kp C_MUTE  &to 4            &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "misc";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -113,7 +113,7 @@
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
-            display-name = "layer2";
+            display-name = "other";
             sensor-bindings = <&scroll_encoder>;
         };
     };
