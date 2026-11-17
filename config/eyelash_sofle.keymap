@@ -54,11 +54,11 @@
 
         Base {
             bindings = <
-&mt (LG(C)) LG(V)        &kp N1      &kp N2        &kp N3        &kp N4     &kp N5    &kp C_VOLUME_UP       &kp N6  &kp N7     &kp N8         &mt N9 EQUAL  &mt N0 MINUS  &kp BACKSPACE
-&kp TAB                  &kp Q       &kp W         &kp E         &kp R      &kp T     &kp C_VOLUME_DOWN     &kp Y   &kp U      &kp I          &kp O         &kp P         &kp DEL
-&mt LEFT_CONTROL ESCAPE  &kp A       &kp S         &kp D         &kp F      &kp G     &kp C_BRIGHTNESS_DEC  &kp H   &kp J      &kp K          &kp L         &kp SEMI      &kp APOS
-&mt LSHFT GRAVE          &kp Z       &kp X         &kp C         &kp V      &kp B     &kp C_BRIGHTNESS_INC  &kp N   &kp M      &kp COMMA      &kp DOT       &kp FSLH      &kp BACKSLASH
-&kp C_MUTE               &kp DELETE  &kp LEFT_ALT  &kp LEFT_GUI  &kp GRAVE  &to 1     &kp C_MUTE            &to 2   &kp SPACE  &kp RIGHT_GUI  &mo 3         &kp ENTER
+&mt (LG(C)) LG(V)        &kp N1      &kp N2        &kp N3        &kp N4     &kp N5    &kp C_VOLUME_UP       &kp N6  &kp N7     &kp N8         &kp N9   &mt N0 MINUS  &kp BACKSPACE
+&kp TAB                  &kp Q       &kp W         &kp E         &kp R      &kp T     &kp C_VOLUME_DOWN     &kp Y   &kp U      &kp I          &kp O    &kp P         &kp DEL
+&mt LEFT_CONTROL ESCAPE  &kp A       &kp S         &kp D         &kp F      &kp G     &kp C_BRIGHTNESS_DEC  &kp H   &kp J      &kp K          &kp L    &kp SEMI      &kp APOS
+&mt LSHFT GRAVE          &kp Z       &kp X         &kp C         &kp V      &kp B     &kp C_BRIGHTNESS_INC  &kp N   &kp M      &kp COMMA      &kp DOT  &kp SLASH     &kp BACKSLASH
+&kp C_MUTE               &kp DELETE  &kp LEFT_ALT  &kp LEFT_GUI  &kp GRAVE  &to 1     &kp C_MUTE            &to 2   &kp SPACE  &kp RIGHT_GUI  &mo 3    &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
